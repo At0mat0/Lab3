@@ -7,7 +7,7 @@ module stimulus ();
    logic left;
    logic right;
    
-   logic  y;
+   logic  [5:0]y;
    
    integer handle3;
    integer desc3;
@@ -40,7 +40,7 @@ module stimulus ();
    initial 
      begin      
 	#0   reset = 1'b1;
-	#41  reset = 1'b0;	
+	#80  reset = 1'b0;	
 	#0   left = 1'b0;
      #0   right = 1'b0;
 	#20  left = 1'b1;

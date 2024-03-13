@@ -1,14 +1,13 @@
-module FSM (clk, reset, Left, Right, y, all);
+module FSM (clk, reset, Left, Right, y);
 
    input logic  clk;
    input logic  reset;
    input logic 	Left;
-   input logic 	right;
-   input logic 	All;
+   input logic 	Right;
    
    output logic [5:0]y;
 
-   typedef enum 	logic [3:0] {S0, S1, S2, S3, R1, R2 ,R3, H1,H2,H3} statetype;
+   typedef enum 	logic [9:0] {S0, S1, S2, S3, R1, R2 ,R3, H1,H2,H3} statetype;
    statetype state, nextstate;
    
    // state register
@@ -21,14 +20,15 @@ module FSM (clk, reset, Left, Right, y, all);
      case (state)
        S0: begin
 	        y <= 6'b00000;	  
-	        if (left&right)begin 
+	        if (Left&Right)begin 
             nextstate <= H1;
             end
     else if (Right) begin nextstate <= R1;
     end
-     else if (left) begin nextstate <= S1;
+     else if (Left) begin nextstate <= S1;
     end
 	  else begin nextstate <= S0;
+       end
        end
   S1: begin
 	  y <= 6'b00100;	  	  
@@ -67,7 +67,7 @@ H3: begin
 	   nextstate <= S0;
        end
         
-       default: begin
+       default: begin 
 	  y <= 6'b000000;	  	  
 	  nextstate <= S0;
        end
