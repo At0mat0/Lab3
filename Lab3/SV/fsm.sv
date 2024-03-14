@@ -31,7 +31,7 @@ module FSM (clk, reset, Left, Right, y);
        end
        end
   S1: begin
-	  y <= 6'b00100;	  	  
+	  y <= 6'b001000;	  	  
 	  nextstate <= S2;
        end
   S2: begin
@@ -44,11 +44,11 @@ module FSM (clk, reset, Left, Right, y);
        end
 R1: begin
 	  y <= 6'b000001;	  	  
-	  nextstate <= R1;
+	  nextstate <= R2;
        end
 R2: begin
 	  y <= 6'b000011;	  	  
-	 nextstate <= R2;
+	 nextstate <= R3;
        end
 R3: begin
 	  y <= 6'b000111;	  	  

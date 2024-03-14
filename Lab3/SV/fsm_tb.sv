@@ -2,7 +2,6 @@
 module stimulus ();
 
    logic  clk;
-   logic  a;
    logic  reset;
    logic left;
    logic right;
@@ -34,21 +33,24 @@ module stimulus ();
      begin
 	desc3 = handle3;
 	#5 $fdisplay(desc3, "%b %b || %b", 
-		     reset, a, y);
+		     reset, left,right, y);
      end   
    
    initial 
-     begin      
-	#0   reset = 1'b1;
-	#80  reset = 1'b0;	
+     begin      	
 	#0   left = 1'b0;
      #0   right = 1'b0;
-	#20  left = 1'b1;
-	#20  right = 1'b0;
-     #40  left = 1'b0;
-	#40  right = 1'b1;
+     #20  left = 1'b0;
+     #20  right = 1'b1;
+     #40 reset =1'b1;
+     #40 reset =1'b0;
      #60  left = 1'b1;
-	#60  right = 1'b1;
+     #60  right = 1'b0;
+     #80  left = 1'b1;
+     #80  right = 1'b1;
+     #100 reset =1'b1;
+
+
      end
 
 endmodule // FSM_tb
