@@ -1,7 +1,13 @@
 m255
 K4
 z2
-!s99 nomlopt
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
 !s11f vlog 2021.3 2021.07, Jul 13 2021
 13
 !s112 1.1
@@ -9,63 +15,74 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/evanc/OneDrive/Documents/GitHub/Lab3/Lab3/SV
+Z1 dC:/Users/evanc/OneDrive/Documents/GitHub/Lab3/Lab3/SV
 T_opt
-!s110 1710376911
-VITS>QXhRmiAY?JnVH>4S00
-04 8 4 work stimulus fast 0
-=1-7404f1eb7e68-65f247cf-190-5980
-!s124 OEM100
-o-quiet -auto_acc_if_foreign -work work +acc
-Z1 tCvgOpt 0
+!s110 1710387437
+Va5^34L4GodOZgkSIbo0o12
+Z2 04 8 4 work stimulus fast 0
+=1-7404f1eb7e68-65f270ed-1b4-6970
+Z3 !s124 OEM100
+Z4 o-quiet -auto_acc_if_foreign -work work +acc
+Z5 tCvgOpt 0
 n@_opt
-OL;O;2021.3;73
+Z6 OL;O;2021.3;73
+R1
+T_opt1
+!s110 1711557242
+V0hCaFdHN]gbBlEn0DDDGK1
+R2
+=1-7404f1eb7e68-66044a7a-128-3b74
+R3
+R4
+R5
+n@_opt1
+R6
 vFSM
-Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z3 !s110 1710376910
+Z7 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z8 !s110 1711557241
 !i10b 1
 !s100 DDzRk;3QVk`hGTzLfKHQR2
 IFc1W22ThFo:>:]gk2[J4Y3
 S1
-R0
+R1
 w1710376118
 8fsm.sv
 Ffsm.sv
 !i122 0
 L0 1 76
-Z4 VDg1SIo80bB@j0V0VzS_@n1
-Z5 OL;L;2021.3;73
+Z9 VDg1SIo80bB@j0V0VzS_@n1
+Z10 OL;L;2021.3;73
 r1
 !s85 0
 31
-Z6 !s108 1710376910.000000
-Z7 !s107 fsm_tb.sv|fsm.sv|
-Z8 !s90 -reportprogress|300|fsm.sv|fsm_tb.sv|
+Z11 !s108 1711557241.000000
+Z12 !s107 fsm_tb.sv|fsm.sv|
+Z13 !s90 -reportprogress|300|fsm.sv|fsm_tb.sv|
 !i113 0
-Z9 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R1
+Z14 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R5
 n@f@s@m
 vstimulus
-R2
-R3
+R7
+R8
 !i10b 1
 !s100 `R7cfDaLC1AzMKJGkNNUT1
 I;INC?T1HZX;HM:Za3TNJV2
 S1
-R0
-w1710376891
+R1
+w1711557234
 8fsm_tb.sv
 Ffsm_tb.sv
 !i122 0
 L0 2 55
-R4
-R5
+R9
+R10
 r1
 !s85 0
 31
-R6
-R7
-R8
+R11
+R12
+R13
 !i113 0
-R9
-R1
+R14
+R5

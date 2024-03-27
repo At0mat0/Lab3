@@ -13,7 +13,7 @@ module stimulus ();
    
    // Instantiate DUT
    FSM dut (clk, reset, left, right, y);   
-   
+
    // Setup the clock to toggle every 1 time units 
    initial 
      begin	
@@ -45,7 +45,7 @@ module stimulus ();
      #40 reset =1'b1;
      #40 reset =1'b0;
      #60  left = 1'b1;
-     #60  right = 1'b0;
+     #60   right = 1'b0;
      #80  left = 1'b1;
      #80  right = 1'b1;
      #100 reset =1'b1;
