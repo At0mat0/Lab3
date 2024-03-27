@@ -43,9 +43,13 @@ module top_demo
   logic [16:0] CURRENT_COUNT;
   logic [16:0] NEXT_COUNT;
   logic        smol_clk;
-  
+  logic        divclk;
+  logic [5:0]val ;
   // Place TicTacToe instantiation here
-  
+  clk_div dut(.clk(sysclk_125mhz),.rst(btn[0]),.clk_en(divclk));
+  FSM dut2(.clk(divclk),.reset(btn[0]),.Left(sw[0]),.Right(sw[1]),.y(led[5:0]));
+
+
   // 7-segment display
   segment_driver driver(
   .clk(smol_clk),

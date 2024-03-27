@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Mar 27 15:26:03 2024
+# Process ID: 20884
+# Current directory: C:/Users/evacole/Desktop/Lab3/Lab3/Vivado/Lab1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20104 C:\Users\evacole\Desktop\Lab3\Lab3\Vivado\Lab1\Lab1.xpr
+# Log file: C:/Users/evacole/Desktop/Lab3/Lab3/Vivado/Lab1/vivado.log
+# Journal file: C:/Users/evacole/Desktop/Lab3/Lab3/Vivado/Lab1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/evacole/Desktop/Lab3/Lab3/Vivado/Lab1/Lab1.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse {C:/Users/evacole/Desktop/Lab3/Lab3/SV/clk_div.sv C:/Users/evacole/Desktop/Lab3/Lab3/SV/fsm.sv}
+update_compile_order -fileset sources_1

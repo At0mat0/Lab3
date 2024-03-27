@@ -43,11 +43,11 @@ module FSM (clk, reset, Left, Right, y);
 	  nextstate <= S0;
        end
 R1: begin
-	  y <= 6'b000001;	  	  
+	  y <= 6'b000100;	  	  
 	  nextstate <= R2;
        end
 R2: begin
-	  y <= 6'b000011;	  	  
+	  y <= 6'b000110;	  	  
 	 nextstate <= R3;
        end
 R3: begin

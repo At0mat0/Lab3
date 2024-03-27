@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Mar 27 15:26:03 2024
+# Process ID: 20884
+# Current directory: C:/Users/evacole/Desktop/Lab3/Lab3/Vivado/Lab1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20104 C:\Users\evacole\Desktop\Lab3\Lab3\Vivado\Lab1\Lab1.xpr
+# Log file: C:/Users/evacole/Desktop/Lab3/Lab3/Vivado/Lab1/vivado.log
+# Journal file: C:/Users/evacole/Desktop/Lab3/Lab3/Vivado/Lab1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/evacole/Desktop/Lab3/Lab3/Vivado/Lab1/Lab1.xpr
+INFO: [Project 1-313] Project file moved from '/home/jstine/vivado/Lab1' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/evacole/Desktop/Lab3/Lab3/Vivado/Demo/archive_project_summary.txt', nor could it be found using path 'C:/home/jstine/vivado/Demo/archive_project_summary.txt'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 1070.840 ; gain = 0.000
+update_compile_order -fileset sources_1
+add_files -norecurse {C:/Users/evacole/Desktop/Lab3/Lab3/SV/clk_div.sv C:/Users/evacole/Desktop/Lab3/Lab3/SV/fsm.sv}
+update_compile_order -fileset sources_1
